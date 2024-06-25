@@ -1,0 +1,352 @@
+html {
+    margin: auto;
+    height: 100%;
+    background-color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    margin:0;
+}
+
+.copyright{
+    font-size: 12px;
+}
+
+.bandeau {
+    width: 100.9%;
+    margin-left: -10px;
+}
+
+.bouton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bouton:hover{
+    background-color: #45a049;
+}
+
+#pokemonImage{
+    border: solid black 3px;
+    padding: 10px;
+    background-color: #333333;
+}
+
+footer {
+    background-color: #465B59;
+    color: #fff;
+    padding: 20px 0;
+    width: auto;
+    margin-top: auto;
+}
+
+.footer-container a {
+    text-decoration:none;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    width: 30%;
+}
+/*/----NAV----/*/
+
+.navbar{
+    margin-bottom: 0;
+    margin-top: -3px;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    width: 100.9%;
+    background-color: #465B59;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: #465B59;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a {
+    margin-left: -40px;
+}
+
+nav>ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: RGBa(200, 200, 200, 0.1);
+}
+
+.deroulant>a::after {
+    content: " ▼";
+    font-size: 12px;
+}
+
+/*/--------------/*/
+
+/*/----Main----/*/
+.main {
+    border: black 3px solid;
+    background-color: #474747;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: white;
+    text-align: center;
+}
+
+.main h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.main p {
+    font-size: 18px;
+}
+
+.main ul {
+    list-style: none;
+}
+
+.main li {
+    padding: 5px;
+}
+
+.main h4 {
+    text-decoration: underline;
+}
+
+.main .objet img {
+    border: solid 1px white
+}
+
+.main table,
+td,
+th {
+    background-color: #333333;
+    border: rgb(31, 31, 31) 3px solid;
+    text-align: center;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+iframe {
+    border: solid white 1px;
+}
+
+.main h2 {
+    border: 2px solid black;
+    background-color: #465B59;
+    border-radius: 0px 30px 0px 30px;
+    padding: 10px;
+}
+
+.main h5 {
+    text-decoration: underline;
+}
+
+.main .localisation img {
+    border: white 1px solid;
+}
+
+.main .localisation a {
+    display: inline-block;
+    padding: 10px;
+}
+
+/*/---------------/*/
+
+/*/-------Responsive--------/*/
+
+@media only screen and (min-width:800px) and (max-width:1024px) {
+    .bandeau {
+        margin-bottom: -26.5px;
+    }
+}
+
+/* Style pour les tablettes/tel */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /*/-----Nav responsive-----/*/
+    nav {
+        width: 1030px;
+    }
+
+    nav ul {
+        display: flex;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .sous {
+        width: 100%;
+    }
+
+    .bandeau {
+        width: 1030px;
+    }
+
+    /*/---Main Response---/*/
+
+    .main .tabTauxPeche {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .main .charme {
+        display: inline;
+        margin-left: 110px;
+    }
+
+    .main {
+        margin-left: 50px;
+        margin-right: 40px;
+    }
+
+    .main p {
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: justify;
+    }
+
+    .main h2 {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 35px;
+    }
+
+    .main table {
+        width: 80%;
+        font-size: 25px;
+    }
+
+    .talent img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .main h4 {
+        padding-top: 50px;
+    }
+
+    .main li {
+        margin-left: 20px;
+        margin-right: 50px;
+        text-align: justify;
+    }
+
+    .main .AnoteTexte {
+        text-align: justify;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/* Style pour les écrans plus grands (desktop) */
+@media only screen and (min-width: 1025px) {
+    nav ul li {
+        width: 25%;
+    }
+
+    .main {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .main p {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .main h2 {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 25;
+    }
+
+    .main table {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .bandeau {
+        width: 102%;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .main p {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .bandeau {
+        width: 102%;
+    }
+}
+
+/*/--------------/*/
